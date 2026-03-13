@@ -8,6 +8,7 @@
                         http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <sec:http pattern="/resources/**" security="none" request-matcher="ant" />
+    <sec:http pattern="/webjars/**" security="none" request-matcher="ant" />
 
     <!-- REST API設定 -->
     <sec:http pattern="/api/v1/**" request-matcher="ant" create-session="stateless">
